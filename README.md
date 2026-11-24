@@ -270,8 +270,6 @@ curl -X POST http://localhost:8000/api/v1/incidents/{INCIDENT_ID}/resolve \
   }'
 ```
 
----
-
 ## 9. Logistics, Vehicle Tracking & Routing Core (Phase 3)
 
 Phase 3 provides end-to-end logistics delivery dispatch, vehicle tracking, directed graph routing, and disruption-aware rerouting.
@@ -292,7 +290,7 @@ Phase 3 provides end-to-end logistics delivery dispatch, vehicle tracking, direc
 
 ```bash
 # 1. Register a vehicle
-curl -X POST http://localhost:8000/api/v1/vehicles \
+curl -X POST http://localhost:8000/api/v1/vehicles\
   -H "Content-Type: application/json" \
   -H "X-User-Role: dispatcher" \
   -H "X-User-Email: dispatcher@nerlink.org" \
@@ -304,7 +302,7 @@ curl -X POST http://localhost:8000/api/v1/vehicles \
   }'
 
 # 2. Create an essential medical delivery
-curl -X POST http://localhost:8000/api/v1/deliveries \
+curl -X POST http://localhost:8000/api/v1/deliveries\
   -H "Content-Type: application/json" \
   -H "X-User-Role: dispatcher" \
   -H "X-User-Email: dispatcher@nerlink.org" \
